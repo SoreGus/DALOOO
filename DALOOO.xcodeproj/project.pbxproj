@@ -21,6 +21,7 @@
 		40A3CBA118ACDC68006473A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB8318ACDC68006473A2 /* UIKit.framework */; };
 		40A3CBA918ACDC68006473A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A3CBA718ACDC68006473A2 /* InfoPlist.strings */; };
 		40A3CBAB18ACDC68006473A2 /* DALOOOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A3CBAA18ACDC68006473A2 /* DALOOOTests.m */; };
+		40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A3CBB518ACE0A7006473A2 /* Personagem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		40A3CBA618ACDC68006473A2 /* DALOOOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DALOOOTests-Info.plist"; sourceTree = "<group>"; };
 		40A3CBA818ACDC68006473A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40A3CBAA18ACDC68006473A2 /* DALOOOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DALOOOTests.m; sourceTree = "<group>"; };
+		40A3CBB418ACE0A7006473A2 /* Personagem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personagem.h; sourceTree = "<group>"; };
+		40A3CBB518ACE0A7006473A2 /* Personagem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personagem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				40A3CB9518ACDC68006473A2 /* ViewController.m */,
 				40A3CB9718ACDC68006473A2 /* Images.xcassets */,
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
+				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
+				40A3CBB518ACE0A7006473A2 /* Personagem.m */,
 			);
 			path = DALOOO;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */,
 				40A3CB9618ACDC68006473A2 /* ViewController.m in Sources */,
 				40A3CB9018ACDC68006473A2 /* AppDelegate.m in Sources */,
 				40A3CB8C18ACDC68006473A2 /* main.m in Sources */,
