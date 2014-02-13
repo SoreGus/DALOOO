@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Personagem.h"
 
+/*
+ * Inteface com o jogador
+ */
 @interface Jogador : NSObject
 {
     NSString *nomeJogador;
