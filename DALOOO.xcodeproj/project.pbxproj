@@ -259,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D911D1916927E7D00812833 /* Mago.m in Sources */,
+				3D911D1616927DAF00812833 /* Monstro.m in Sources */,
 				40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */,
 				40A3CB9618ACDC68006473A2 /* ViewController.m in Sources */,
 				40A3CB9018ACDC68006473A2 /* AppDelegate.m in Sources */,
