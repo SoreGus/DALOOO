@@ -28,6 +28,7 @@
 		40AA582018AE36650035DBB3 /* Guerreiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581D18AE36650035DBB3 /* Guerreiro.m */; };
 		40AA582118AE36650035DBB3 /* Monstro.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581F18AE36650035DBB3 /* Monstro.m */; };
 		40AA582418AE40350035DBB3 /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA582318AE40350035DBB3 /* Jogo.m */; };
+		40AA582818AE4A750035DBB3 /* floresta-3d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40AA582718AE4A750035DBB3 /* floresta-3d.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		40AA581F18AE36650035DBB3 /* Monstro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monstro.m; sourceTree = "<group>"; };
 		40AA582218AE40350035DBB3 /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogo.h; sourceTree = "<group>"; };
 		40AA582318AE40350035DBB3 /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogo.m; sourceTree = "<group>"; };
+		40AA582718AE4A750035DBB3 /* floresta-3d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "floresta-3d.jpg"; path = "../../../../Downloads/floresta-3d.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				40A3CB9118ACDC68006473A2 /* Main.storyboard */,
 				40A3CB9418ACDC68006473A2 /* ViewController.h */,
 				40A3CB9518ACDC68006473A2 /* ViewController.m */,
+				40AA582718AE4A750035DBB3 /* floresta-3d.jpg */,
 				40A3CB9718ACDC68006473A2 /* Images.xcassets */,
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
 				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
@@ -265,6 +268,7 @@
 			files = (
 				40A3CB9818ACDC68006473A2 /* Images.xcassets in Resources */,
 				40A3CB8A18ACDC68006473A2 /* InfoPlist.strings in Resources */,
+				40AA582818AE4A750035DBB3 /* floresta-3d.jpg in Resources */,
 				40A3CB9318ACDC68006473A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
