@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25BC58DC18ACFD3B00587C50 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC58DB18ACFD3B00587C50 /* Jogador.m */; };
 		40A3CB8018ACDC68006473A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB7F18ACDC68006473A2 /* Foundation.framework */; };
 		40A3CB8218ACDC68006473A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB8118ACDC68006473A2 /* CoreGraphics.framework */; };
 		40A3CB8418ACDC68006473A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB8318ACDC68006473A2 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25BC58DA18ACFD3B00587C50 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		25BC58DB18ACFD3B00587C50 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
 		40A3CB7C18ACDC68006473A2 /* DALOOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DALOOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A3CB7F18ACDC68006473A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40A3CB8118ACDC68006473A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
 				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
 				40A3CBB518ACE0A7006473A2 /* Personagem.m */,
+				25BC58DA18ACFD3B00587C50 /* Jogador.h */,
+				25BC58DB18ACFD3B00587C50 /* Jogador.m */,
 			);
 			path = DALOOO;
 			sourceTree = "<group>";
@@ -254,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D911D1916927E7D00812833 /* Mago.m in Sources */,
+				3D911D1616927DAF00812833 /* Monstro.m in Sources */,
 				40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */,
 				40A3CB9618ACDC68006473A2 /* ViewController.m in Sources */,
 				40A3CB9018ACDC68006473A2 /* AppDelegate.m in Sources */,
+				25BC58DC18ACFD3B00587C50 /* Jogador.m in Sources */,
 				40A3CB8C18ACDC68006473A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +474,7 @@
 				40A3CBB018ACDC68006473A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40A3CBB118ACDC68006473A2 /* Build configuration list for PBXNativeTarget "DALOOOTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +483,7 @@
 				40A3CBB318ACDC68006473A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
