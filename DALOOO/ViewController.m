@@ -13,10 +13,15 @@
 @end
 
 @implementation ViewController
+@synthesize campoNomeP1,campoSeuNome,campoNomeP2;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    campoSeuNome.delegate = self;
+    campoNomeP1.delegate = self;
+    campoNomeP2.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +29,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    if(textField == campoSeuNome){
+        [campoSeuNome resignFirstResponder];
+        return YES;
+    }
+    else if(textField == campoNomeP1){
+        [campoNomeP1 resignFirstResponder];
+        return YES;
+    }
+    else if(textField == campoNomeP2){
+        [campoNomeP2 resignFirstResponder];
+        return YES;
+    }
+    else return NO;
 }
 
 @end
