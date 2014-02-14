@@ -12,24 +12,4 @@
 
 @synthesize nome,ataque,defesa,vida,level;
 
--(id)initWithNome:(NSString*)n ataque:(int)a defesa:(int)d{
-    self = [super init];
-    nome = n;
-    vida = 100;
-    level = 0;
-    ataque = a;
-    defesa = d;
-    return self;
-}
-
--(BOOL)atacar:(Personagem *)adversario{
-    if(ataque > [adversario defesa]){
-        adversario.vida = adversario.vida - (ataque-adversario.defesa);
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
 @end

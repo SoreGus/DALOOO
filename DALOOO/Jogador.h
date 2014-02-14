@@ -13,11 +13,10 @@
  * Inteface com o jogador
  */
 @interface Jogador : NSObject
-{
-    NSString *nomeJogador;
-    Personagem *personagem1;
-    Personagem *personagem2;
-}
+
+@property (weak,nonatomic)NSString * nomeJogador;
+@property (weak,nonatomic)Personagem * personagem1;
+@property (weak,nonatomic)Personagem * personagem2;
 
 -(id) initWithDoisPersonagens : (NSString *) _nomeJogador andPersonagem1 : (Personagem *) _personagem1 andPersonagem2 : (Personagem *) _personagem2;
 

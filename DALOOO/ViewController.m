@@ -7,13 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "FlorestaViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-@synthesize campoNomeP1,campoSeuNome,campoNomeP2;
+@synthesize campoNomeP1,campoSeuNome,campoNomeP2,j,jogo;
 
 - (void)viewDidLoad
 {
@@ -47,4 +48,23 @@
     else return NO;
 }
 
+- (IBAction)botaoJogar:(id)sender {
+    Personagem *p1;
+    Personagem *p2;
+    if(_segP1O.selectedSegmentIndex == 0){
+        p1 = [[Guerreiro alloc]initWithNome:campoNomeP1.text];
+    }
+    else{
+        p1 = [[Mago alloc]initWithNome:campoNomeP1.text];
+    }
+    if(_segP2O.selectedSegmentIndex == 0){
+        p2 = [[Guerreiro alloc]initWithNome:campoNomeP2.text];
+    }
+    else{
+        p2 = [[Mago alloc]initWithNome:campoNomeP2.text];
+    }
+    j = [[Jogador alloc]initWithDoisPersonagens:campoSeuNome.text andPersonagem1:p1 andPersonagem2:p2];
+    Jogo *jogo = [Jogo getInstancia];
+    jogo.jogador = j;
+}
 @end

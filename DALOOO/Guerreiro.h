@@ -10,6 +10,6 @@
 
 @interface Guerreiro : Personagem
 
--(id)initWithNome:(NSString *)nome;
+-(id)initWithNome:(NSString *)n;
 
 @end

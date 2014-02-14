@@ -10,8 +10,13 @@
 
 @implementation Mago
 
--(id)initWithNome:(NSString*)nome{
-    self = [super initWithNome:nome ataque:11 defesa:4];
+-(id)initWithNome:(NSString*)n{
+    self = [super init];
+    self.nome = n;
+    self.ataque = 11;
+    self.defesa = 4;
+    self.vida = 100;
+    self.level = 0;
     
     return self;
 }

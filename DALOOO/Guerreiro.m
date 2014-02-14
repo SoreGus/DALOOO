@@ -10,8 +10,13 @@
 
 @implementation Guerreiro
 
--(id)initWithNome:(NSString*)nome{
-    self = [super initWithNome:nome ataque:10 defesa:5];
+-(id)initWithNome:(NSString*)n{
+    self = [super init];
+    self.nome = n;
+    self.ataque = 10;
+    self.defesa = 5;
+    self.vida = 100;
+    self.level = 0;
 
     return self;
 }

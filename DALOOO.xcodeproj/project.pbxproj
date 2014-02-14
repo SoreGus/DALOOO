@@ -23,6 +23,11 @@
 		40A3CBA918ACDC68006473A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A3CBA718ACDC68006473A2 /* InfoPlist.strings */; };
 		40A3CBAB18ACDC68006473A2 /* DALOOOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A3CBAA18ACDC68006473A2 /* DALOOOTests.m */; };
 		40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A3CBB518ACE0A7006473A2 /* Personagem.m */; };
+		40AA581818AE2B040035DBB3 /* FlorestaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581718AE2B040035DBB3 /* FlorestaViewController.m */; };
+		40AA581B18AE364C0035DBB3 /* Mago.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581A18AE364C0035DBB3 /* Mago.m */; };
+		40AA582018AE36650035DBB3 /* Guerreiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581D18AE36650035DBB3 /* Guerreiro.m */; };
+		40AA582118AE36650035DBB3 /* Monstro.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA581F18AE36650035DBB3 /* Monstro.m */; };
+		40AA582418AE40350035DBB3 /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA582318AE40350035DBB3 /* Jogo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,16 @@
 		40A3CBAA18ACDC68006473A2 /* DALOOOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DALOOOTests.m; sourceTree = "<group>"; };
 		40A3CBB418ACE0A7006473A2 /* Personagem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personagem.h; sourceTree = "<group>"; };
 		40A3CBB518ACE0A7006473A2 /* Personagem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personagem.m; sourceTree = "<group>"; };
+		40AA581618AE2B040035DBB3 /* FlorestaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlorestaViewController.h; sourceTree = "<group>"; };
+		40AA581718AE2B040035DBB3 /* FlorestaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlorestaViewController.m; sourceTree = "<group>"; };
+		40AA581918AE364C0035DBB3 /* Mago.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mago.h; sourceTree = "<group>"; };
+		40AA581A18AE364C0035DBB3 /* Mago.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mago.m; sourceTree = "<group>"; };
+		40AA581C18AE36650035DBB3 /* Guerreiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guerreiro.h; sourceTree = "<group>"; };
+		40AA581D18AE36650035DBB3 /* Guerreiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guerreiro.m; sourceTree = "<group>"; };
+		40AA581E18AE36650035DBB3 /* Monstro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monstro.h; sourceTree = "<group>"; };
+		40AA581F18AE36650035DBB3 /* Monstro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monstro.m; sourceTree = "<group>"; };
+		40AA582218AE40350035DBB3 /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogo.h; sourceTree = "<group>"; };
+		40AA582318AE40350035DBB3 /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				40A3CB8E18ACDC68006473A2 /* AppDelegate.h */,
+				40AA582218AE40350035DBB3 /* Jogo.h */,
+				40AA582318AE40350035DBB3 /* Jogo.m */,
 				40A3CB8F18ACDC68006473A2 /* AppDelegate.m */,
 				40A3CB9118ACDC68006473A2 /* Main.storyboard */,
 				40A3CB9418ACDC68006473A2 /* ViewController.h */,
@@ -127,8 +144,16 @@
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
 				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
 				40A3CBB518ACE0A7006473A2 /* Personagem.m */,
+				40AA581C18AE36650035DBB3 /* Guerreiro.h */,
+				40AA581D18AE36650035DBB3 /* Guerreiro.m */,
+				40AA581E18AE36650035DBB3 /* Monstro.h */,
+				40AA581F18AE36650035DBB3 /* Monstro.m */,
 				25BC58DA18ACFD3B00587C50 /* Jogador.h */,
+				40AA581918AE364C0035DBB3 /* Mago.h */,
+				40AA581A18AE364C0035DBB3 /* Mago.m */,
 				25BC58DB18ACFD3B00587C50 /* Jogador.m */,
+				40AA581618AE2B040035DBB3 /* FlorestaViewController.h */,
+				40AA581718AE2B040035DBB3 /* FlorestaViewController.m */,
 			);
 			path = DALOOO;
 			sourceTree = "<group>";
@@ -259,10 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D911D1916927E7D00812833 /* Mago.m in Sources */,
-				3D911D1616927DAF00812833 /* Monstro.m in Sources */,
+				40AA582418AE40350035DBB3 /* Jogo.m in Sources */,
+				40AA582118AE36650035DBB3 /* Monstro.m in Sources */,
+				40AA581B18AE364C0035DBB3 /* Mago.m in Sources */,
 				40A3CBB618ACE0A7006473A2 /* Personagem.m in Sources */,
+				40AA582018AE36650035DBB3 /* Guerreiro.m in Sources */,
 				40A3CB9618ACDC68006473A2 /* ViewController.m in Sources */,
+				40AA581818AE2B040035DBB3 /* FlorestaViewController.m in Sources */,
 				40A3CB9018ACDC68006473A2 /* AppDelegate.m in Sources */,
 				25BC58DC18ACFD3B00587C50 /* Jogador.m in Sources */,
 				40A3CB8C18ACDC68006473A2 /* main.m in Sources */,

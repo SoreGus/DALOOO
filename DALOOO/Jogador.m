@@ -9,6 +9,7 @@
 #import "Jogador.h"
 
 @implementation Jogador
+@synthesize nomeJogador,personagem1,personagem2;
 
 // Entrada: NSSTring, para o nome do personagem
 //  ||      Personagem, primeiro personagem do jogador
