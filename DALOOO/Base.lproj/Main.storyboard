@@ -168,7 +168,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9N-ip-57j">
-                                <rect key="frame" x="127" y="393" width="66" height="30"/>
+                                <rect key="frame" x="86" y="393" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Proximo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,23 +229,48 @@
                                     <action selector="botaoP1:" destination="S5d-sb-qrw" eventType="touchUpInside" id="fSv-pq-bQk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gtn-F2-MIk">
-                                <rect key="frame" x="20" y="28" width="130" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhG-FX-gk8">
-                                <rect key="frame" x="20" y="28" width="130" height="167"/>
+                                <rect key="frame" x="170" y="28" width="130" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-Pm-cMf">
-                                <rect key="frame" x="133" y="344" width="180" height="128"/>
+                                <rect key="frame" x="5" y="257" width="180" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-3B-NPw">
+                                <rect key="frame" x="193" y="234" width="127" height="174"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c2-WW-ciE">
+                                <rect key="frame" x="20" y="393" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoAtacar:" destination="S5d-sb-qrw" eventType="touchUpInside" id="QMT-Np-MBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYU-zV-Yrt">
+                                <rect key="frame" x="176" y="393" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoOk:" destination="S5d-sb-qrw" eventType="touchUpInside" id="Rcg-pG-Z3D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="botao" destination="o9N-ip-57j" id="s0l-Bp-xPR"/>
+                        <outlet property="botaoAtacarO" destination="0c2-WW-ciE" id="Qr1-bZ-TfB"/>
+                        <outlet property="botaoOkO" destination="KYU-zV-Yrt" id="oFs-7D-iuc"/>
                         <outlet property="botaoP1O" destination="vN6-Pt-xxC" id="u6I-4n-TTP"/>
                         <outlet property="botaoP2O" destination="PNB-HM-xOs" id="RX1-n0-kUx"/>
                         <outlet property="imagemBatalhaM" destination="yhT-Pm-cMf" id="HI4-Hk-2bD"/>
@@ -257,6 +282,7 @@
                         <outlet property="labelP1" destination="TaI-HW-2lJ" id="Bqd-GM-sSI"/>
                         <outlet property="labelP2" destination="jaA-4o-s45" id="h2W-Yj-ehm"/>
                         <outlet property="texto" destination="jSs-Xu-QFi" id="NhP-lG-d6D"/>
+                        <outlet property="textoInfoM" destination="KJC-3B-NPw" id="hkD-DC-xwK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maI-ff-Adf" userLabel="First Responder" sceneMemberID="firstResponder"/>

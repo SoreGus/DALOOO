@@ -7,6 +7,7 @@
 //
 
 #import "FlorestaViewController.h"
+#import "Monstro.h"
 
 
 
@@ -18,10 +19,14 @@ int aux = 0;
 int escolha;
 NSString *dadosP1;
 NSString *dadosP2;
+UIImage *imgBP;
+UIImage *imgBM;
+NSString *infoP;
+Monstro *larva;
 
 @implementation FlorestaViewController
 @synthesize jogador,nomeJogador,jogo,botao,imagemP1,imagemP2,labelP1,labelP2,imagemMonstro,labelMosntro,botaoP1O,botaoP2O,
-imagemBatalhaM,imagemBatalhaP;
+imagemBatalhaM,imagemBatalhaP,textoInfoM,botaoAtacarO,botaoOkO;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,6 +61,7 @@ imagemBatalhaM,imagemBatalhaP;
 
 - (void)viewDidLoad
 {
+    larva = [[Monstro alloc]initWithNome:@"Larva"];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"floresta-3d.jpg"]]];
     jogo = [Jogo getInstancia];
     nomeJogador.text = jogo.jogador.nomeJogador;
@@ -64,6 +70,9 @@ imagemBatalhaM,imagemBatalhaP;
     NSString *text1 = @"Bem vindo ";
     _texto.text = text1;
     _texto.editable = NO;
+    textoInfoM.editable = NO;
+    textoInfoM.textColor = [UIColor whiteColor];
+    textoInfoM.backgroundColor = nil;
     
     //iniciando os elementos
     labelP1.text = jogo.jogador.personagem1.nome;
@@ -79,6 +88,10 @@ imagemBatalhaM,imagemBatalhaP;
     botaoP2O.hidden = YES;
     dadosP1 = jogo.jogador.personagem1.toString;
     dadosP2 = jogo.jogador.personagem2.toString;
+    botaoAtacarO.hidden = YES;
+    botaoOkO.hidden = YES;
+    [botaoAtacarO setTitle:@"Atacar" forState:UIControlStateNormal];
+    [botaoOkO setTitle:@"Ok" forState:UIControlStateNormal];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -115,30 +128,56 @@ imagemBatalhaM,imagemBatalhaP;
             labelP2.hidden = YES;
             imagemP1.hidden = YES;
             imagemP2.hidden = YES;
-            _texto.text = @"hhhhhhh";
+            _texto.text = infoP;
             _texto.hidden = NO;
             imagemBatalhaP.hidden = NO;
+            imgBM = [UIImage imageNamed:@"larva.png"];
+            [imagemBatalhaM setImage:imgBM];
+            [imagemBatalhaP setImage:imgBP];
+            textoInfoM.text = larva.toString;
+            [botao setTitle:@"Iniciar Batalha" forState:UIControlStateNormal];
+            aux++;
+            break;
+        case 3:
+            botao.hidden = YES;
+            botaoAtacarO.hidden = NO;
+            break;
         default:
             break;
     }
 }
 - (IBAction)botaoP1:(id)sender {
-    _texto.text = [NSString stringWithFormat:@"Informações: %@",dadosP1];
+    infoP = [NSString stringWithFormat:@"Informações: %@",dadosP1];
     escolha = 1;
     aux++;
     imagemP2.hidden = YES;
     botao.hidden = NO;
     botaoP1O.hidden = YES;
     botaoP2O.hidden = YES;
+    if(jogo.jogador.personagem1.tipo == 1){
+        imgBP = [UIImage imageNamed:@"guerreiro.png"];
+    }
+    else imgBP = [UIImage imageNamed:@"mago.png"];
 }
 
 - (IBAction)botaoP2:(id)sender {
-    _texto.text = [NSString stringWithFormat:@"Informações: %@",dadosP2];
+    infoP = [NSString stringWithFormat:@"Informações: %@",dadosP2];
     escolha = 2;
     aux++;
     imagemP1.hidden = YES;
     botao.hidden = NO;
     botaoP1O.hidden = YES;
     botaoP2O.hidden = YES;
+    if(jogo.jogador.personagem2.tipo == 1){
+        imgBP = [UIImage imageNamed:@"guerreiro.png"];
+    }
+    else imgBP = [UIImage imageNamed:@"mago.png"];
+}
+- (IBAction)botaoOk:(id)sender {
+}
+
+- (IBAction)botaoAtacar:(id)sender {
+    [jogo.jogador.personagem1 atacarOutroPersonagem:larva];
+    textoInfoM.text = larva.toString;
 }
 @end

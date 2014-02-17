@@ -29,6 +29,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *botaoP2O;
 @property (weak, nonatomic) IBOutlet UIImageView *imagemBatalhaP;
 @property (weak, nonatomic) IBOutlet UIImageView *imagemBatalhaM;
+@property (weak, nonatomic) IBOutlet UITextView *textoInfoM;
+- (IBAction)botaoOk:(id)sender;
+- (IBAction)botaoAtacar:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *botaoAtacarO;
+@property (weak, nonatomic) IBOutlet UIButton *botaoOkO;
 
 
 

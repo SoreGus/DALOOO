@@ -18,4 +18,13 @@
     return desc;
 }
 
+-(BOOL)atacarOutroPersonagem:(Personagem *)personagemAtacado {
+    int dano = ataque - personagemAtacado.defesa;
+    if(dano > 0){
+        personagemAtacado.vida = personagemAtacado.vida - dano;
+        return true;
+    }
+    else return false;
+}
+
 @end
