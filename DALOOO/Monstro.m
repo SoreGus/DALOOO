@@ -17,6 +17,7 @@
     self.defesa = 3;
     self.vida = 100;
     self.level = 0;
+    self.tipo = 10;
     
     return self;
 }

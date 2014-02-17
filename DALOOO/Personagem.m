@@ -10,6 +10,6 @@
 
 @implementation Personagem
 
-@synthesize nome,ataque,defesa,vida,level;
+@synthesize nome,ataque,defesa,vida,level,tipo;
 
 @end

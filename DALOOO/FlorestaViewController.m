@@ -17,7 +17,7 @@
 int aux = 0;
 
 @implementation FlorestaViewController
-@synthesize jogador,nomeJogador,jogo,botao,botaoP1,botaoP2;
+@synthesize jogador,nomeJogador,jogo,botao,imagemP1,imagemP2,labelP1,labelP2,imagemMonstro,labelMosntro;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +26,28 @@ int aux = 0;
         // Custom initialization
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    Jogo *jogo = [Jogo getInstancia];
+    UIImage *imgp1;
+    UIImage *imgp2;
+    UIImage *imgM;
+    if(jogo.jogador.personagem1.tipo == 1){
+        imgp1 = [UIImage imageNamed:@"guerreiro.png"];
+    }
+    else imgp1 = [UIImage imageNamed:@"mago.png"];
+    if(jogo.jogador.personagem2.tipo == 1){
+        imgp2 = [UIImage imageNamed:@"guerreiro.png"];
+    }
+    else imgp2 = [UIImage imageNamed:@"mago.png"];
+    imgM = [UIImage imageNamed:@"larva.png"];
+    [imagemP1 setImage:imgp1];
+    [imagemP2 setImage:imgp2];
+    [imagemMonstro setImage:imgM];
+    imagemP1.hidden = YES;
+    imagemP2.hidden = YES;
+    imagemMonstro.hidden = YES;
 }
 
 - (void)viewDidLoad
@@ -38,8 +60,18 @@ int aux = 0;
     NSString *text1 = @"Bem vindo jogador";
     _texto.text = text1;
     _texto.editable = NO;
-    [botaoP1 setTitle:jogo.jogador.personagem1.nome forState:UIControlStateNormal];
-    [botaoP2 setTitle:jogo.jogador.personagem2.nome forState:UIControlStateNormal];
+    
+    //iniciando as labels
+    labelP1.text = jogo.jogador.personagem1.nome;
+    labelP2.text = jogo.jogador.personagem2.nome;
+    labelMosntro.text = @"Larva";
+    labelP1.textColor = [UIColor whiteColor];
+    labelP2.textColor = [UIColor whiteColor];
+    labelMosntro.textColor = [UIColor whiteColor];
+    labelP1.hidden = YES;
+    labelP2.hidden = YES;
+    labelMosntro.hidden = YES;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -54,19 +86,22 @@ int aux = 0;
     switch (aux) {
         case 0:
             _texto.text = @"Você esta caminhando na floresta e esbarra numa larva venenosa.";
+            imagemMonstro.hidden = NO;
+            labelMosntro.hidden = NO;
             aux++;
             break;
         case 1:
-            _texto.text = @"Escolha o jogador que vai usar:";
+            _texto.text = @"Escolha o personagem que vai usar:";
             botao.hidden = YES;
+            imagemMonstro.hidden = YES;
+            labelMosntro.hidden = YES;
+            imagemP1.hidden = NO;
+            imagemP2.hidden = NO;
+            labelP1.hidden = NO;
+            labelP2.hidden = NO;
             break;
         default:
             break;
     }
-}
-- (IBAction)botaoPersonagem2Acao:(id)sender {
-}
-
-- (IBAction)botaoPersonagem1Acao:(id)sender {
 }
 @end

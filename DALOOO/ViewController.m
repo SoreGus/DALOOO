@@ -64,6 +64,8 @@
         p2 = [[Mago alloc]initWithNome:campoNomeP2.text];
     }
     j = [[Jogador alloc]initWithDoisPersonagens:campoSeuNome.text andPersonagem1:p1 andPersonagem2:p2];
+    NSLog(@"%d",j.personagem2.tipo);
+    NSLog(@"%d",j.personagem1.tipo);
     Jogo *jogo = [Jogo getInstancia];
     jogo.jogador = j;
 }

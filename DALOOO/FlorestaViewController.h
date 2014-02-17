@@ -17,8 +17,12 @@
 @property (weak, nonatomic) IBOutlet UITextView *texto;
 - (IBAction)botaoProximo:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *botao;
-@property (weak, nonatomic) IBOutlet UIButton *botaoP1;
-@property (weak, nonatomic) IBOutlet UIButton *botaoP2;
+@property (weak, nonatomic) IBOutlet UIImageView *imagemP1;
+@property (weak, nonatomic) IBOutlet UIImageView *imagemP2;
+@property (weak, nonatomic) IBOutlet UILabel *labelP1;
+@property (weak, nonatomic) IBOutlet UILabel *labelP2;
+@property (weak, nonatomic) IBOutlet UIImageView *imagemMonstro;
+@property (weak, nonatomic) IBOutlet UILabel *labelMosntro;
 
 
 

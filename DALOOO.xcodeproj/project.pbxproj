@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		25BC58DC18ACFD3B00587C50 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BC58DB18ACFD3B00587C50 /* Jogador.m */; };
+		40A11B7E18AE72300066AB4E /* guerreiro.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A11B7D18AE72300066AB4E /* guerreiro.png */; };
+		40A11B8018AE72DF0066AB4E /* mago.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A11B7F18AE72DF0066AB4E /* mago.png */; };
+		40A11B8218AE867D0066AB4E /* larva.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A11B8118AE867D0066AB4E /* larva.png */; };
 		40A3CB8018ACDC68006473A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB7F18ACDC68006473A2 /* Foundation.framework */; };
 		40A3CB8218ACDC68006473A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB8118ACDC68006473A2 /* CoreGraphics.framework */; };
 		40A3CB8418ACDC68006473A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A3CB8318ACDC68006473A2 /* UIKit.framework */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		25BC58DA18ACFD3B00587C50 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
 		25BC58DB18ACFD3B00587C50 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		40A11B7D18AE72300066AB4E /* guerreiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guerreiro.png; path = ../../../../Downloads/guerreiro.png; sourceTree = "<group>"; };
+		40A11B7F18AE72DF0066AB4E /* mago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mago.png; path = ../../../../Downloads/mago.png; sourceTree = "<group>"; };
+		40A11B8118AE867D0066AB4E /* larva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = larva.png; path = ../../../../Downloads/larva.png; sourceTree = "<group>"; };
 		40A3CB7C18ACDC68006473A2 /* DALOOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DALOOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A3CB7F18ACDC68006473A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40A3CB8118ACDC68006473A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,7 +148,10 @@
 				40A3CB9118ACDC68006473A2 /* Main.storyboard */,
 				40A3CB9418ACDC68006473A2 /* ViewController.h */,
 				40A3CB9518ACDC68006473A2 /* ViewController.m */,
+				40A11B7D18AE72300066AB4E /* guerreiro.png */,
 				40AA582718AE4A750035DBB3 /* floresta-3d.jpg */,
+				40A11B8118AE867D0066AB4E /* larva.png */,
+				40A11B7F18AE72DF0066AB4E /* mago.png */,
 				40A3CB9718ACDC68006473A2 /* Images.xcassets */,
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
 				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
@@ -266,9 +275,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A11B8018AE72DF0066AB4E /* mago.png in Resources */,
 				40A3CB9818ACDC68006473A2 /* Images.xcassets in Resources */,
 				40A3CB8A18ACDC68006473A2 /* InfoPlist.strings in Resources */,
+				40A11B7E18AE72300066AB4E /* guerreiro.png in Resources */,
 				40AA582818AE4A750035DBB3 /* floresta-3d.jpg in Resources */,
+				40A11B8218AE867D0066AB4E /* larva.png in Resources */,
 				40A3CB9318ACDC68006473A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

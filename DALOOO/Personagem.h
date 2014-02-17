@@ -14,6 +14,7 @@
 @property int ataque;
 @property int defesa;
 @property int vida;
+@property int tipo;
 -(id)initWithNome:(NSString*)n ataque:(int)a defesa:(int)d;
 -(BOOL)atacar:(Personagem*)adversario;
 
