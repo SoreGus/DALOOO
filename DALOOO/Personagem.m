@@ -12,4 +12,10 @@
 
 @synthesize nome,ataque,defesa,vida,level,tipo;
 
+-(NSString*)toString {
+    NSString *desc = [NSString stringWithFormat:@"\nNome: %@\n Ataque: %d\n Defesa: %d\n Level: %d\n Vida: %d", nome, ataque, defesa, level, vida];
+    
+    return desc;
+}
+
 @end

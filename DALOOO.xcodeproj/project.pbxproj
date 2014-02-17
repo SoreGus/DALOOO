@@ -141,6 +141,7 @@
 		40A3CB8518ACDC68006473A2 /* DALOOO */ = {
 			isa = PBXGroup;
 			children = (
+				40AD5BB318B2385300014FBB /* New Group */,
 				40A3CB8E18ACDC68006473A2 /* AppDelegate.h */,
 				40AA582218AE40350035DBB3 /* Jogo.h */,
 				40AA582318AE40350035DBB3 /* Jogo.m */,
@@ -148,10 +149,6 @@
 				40A3CB9118ACDC68006473A2 /* Main.storyboard */,
 				40A3CB9418ACDC68006473A2 /* ViewController.h */,
 				40A3CB9518ACDC68006473A2 /* ViewController.m */,
-				40A11B7D18AE72300066AB4E /* guerreiro.png */,
-				40AA582718AE4A750035DBB3 /* floresta-3d.jpg */,
-				40A11B8118AE867D0066AB4E /* larva.png */,
-				40A11B7F18AE72DF0066AB4E /* mago.png */,
 				40A3CB9718ACDC68006473A2 /* Images.xcassets */,
 				40A3CB8618ACDC68006473A2 /* Supporting Files */,
 				40A3CBB418ACE0A7006473A2 /* Personagem.h */,
@@ -197,6 +194,17 @@
 				40A3CBA718ACDC68006473A2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40AD5BB318B2385300014FBB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				40A11B7D18AE72300066AB4E /* guerreiro.png */,
+				40AA582718AE4A750035DBB3 /* floresta-3d.jpg */,
+				40A11B8118AE867D0066AB4E /* larva.png */,
+				40A11B7F18AE72DF0066AB4E /* mago.png */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

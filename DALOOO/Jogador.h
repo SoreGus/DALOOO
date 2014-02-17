@@ -14,9 +14,9 @@
  */
 @interface Jogador : NSObject
 
-@property (weak,nonatomic)NSString * nomeJogador;
-@property (weak,nonatomic)Personagem * personagem1;
-@property (weak,nonatomic)Personagem * personagem2;
+@property (strong,nonatomic)NSString * nomeJogador;
+@property (strong,nonatomic)Personagem * personagem1;
+@property (strong,nonatomic)Personagem * personagem2;
 
 -(id) initWithDoisPersonagens : (NSString *) _nomeJogador andPersonagem1 : (Personagem *) _personagem1 andPersonagem2 : (Personagem *) _personagem2;
 

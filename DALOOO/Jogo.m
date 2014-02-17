@@ -19,6 +19,8 @@ static Jogo *instancia = nil;
     return instancia;
 }
 
+
+
 - (id)init{
     if (self = [super init]) {
         jogador = [[Jogador alloc] init];

@@ -17,6 +17,7 @@
 @property int tipo;
 -(id)initWithNome:(NSString*)n ataque:(int)a defesa:(int)d;
 -(BOOL)atacar:(Personagem*)adversario;
+-(NSString*)toString;
 
 
 @end

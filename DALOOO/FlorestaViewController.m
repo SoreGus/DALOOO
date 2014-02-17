@@ -15,9 +15,13 @@
 @end
 
 int aux = 0;
+int escolha;
+NSString *dadosP1;
+NSString *dadosP2;
 
 @implementation FlorestaViewController
-@synthesize jogador,nomeJogador,jogo,botao,imagemP1,imagemP2,labelP1,labelP2,imagemMonstro,labelMosntro;
+@synthesize jogador,nomeJogador,jogo,botao,imagemP1,imagemP2,labelP1,labelP2,imagemMonstro,labelMosntro,botaoP1O,botaoP2O,
+imagemBatalhaM,imagemBatalhaP;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +33,7 @@ int aux = 0;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    Jogo *jogo = [Jogo getInstancia];
+    jogo = [Jogo getInstancia];
     UIImage *imgp1;
     UIImage *imgp2;
     UIImage *imgM;
@@ -53,15 +57,15 @@ int aux = 0;
 - (void)viewDidLoad
 {
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"floresta-3d.jpg"]]];
-    Jogo *jogo = [Jogo getInstancia];
+    jogo = [Jogo getInstancia];
     nomeJogador.text = jogo.jogador.nomeJogador;
     _texto.backgroundColor = nil;
     _texto.textColor = [UIColor whiteColor];
-    NSString *text1 = @"Bem vindo jogador";
+    NSString *text1 = @"Bem vindo ";
     _texto.text = text1;
     _texto.editable = NO;
     
-    //iniciando as labels
+    //iniciando os elementos
     labelP1.text = jogo.jogador.personagem1.nome;
     labelP2.text = jogo.jogador.personagem2.nome;
     labelMosntro.text = @"Larva";
@@ -71,6 +75,10 @@ int aux = 0;
     labelP1.hidden = YES;
     labelP2.hidden = YES;
     labelMosntro.hidden = YES;
+    botaoP1O.hidden = YES;
+    botaoP2O.hidden = YES;
+    dadosP1 = jogo.jogador.personagem1.toString;
+    dadosP2 = jogo.jogador.personagem2.toString;
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -99,9 +107,38 @@ int aux = 0;
             imagemP2.hidden = NO;
             labelP1.hidden = NO;
             labelP2.hidden = NO;
+            botaoP1O.hidden = NO;
+            botaoP2O.hidden = NO;
             break;
+        case 2:
+            labelP1.hidden = YES;
+            labelP2.hidden = YES;
+            imagemP1.hidden = YES;
+            imagemP2.hidden = YES;
+            _texto.text = @"hhhhhhh";
+            _texto.hidden = NO;
+            imagemBatalhaP.hidden = NO;
         default:
             break;
     }
+}
+- (IBAction)botaoP1:(id)sender {
+    _texto.text = [NSString stringWithFormat:@"Informações: %@",dadosP1];
+    escolha = 1;
+    aux++;
+    imagemP2.hidden = YES;
+    botao.hidden = NO;
+    botaoP1O.hidden = YES;
+    botaoP2O.hidden = YES;
+}
+
+- (IBAction)botaoP2:(id)sender {
+    _texto.text = [NSString stringWithFormat:@"Informações: %@",dadosP2];
+    escolha = 2;
+    aux++;
+    imagemP1.hidden = YES;
+    botao.hidden = NO;
+    botaoP1O.hidden = YES;
+    botaoP2O.hidden = YES;
 }
 @end

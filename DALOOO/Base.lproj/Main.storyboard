@@ -204,16 +204,52 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3o-mq-cgV">
-                                <rect key="frame" x="134" y="145" width="42" height="21"/>
+                                <rect key="frame" x="102" y="145" width="98" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNB-HM-xOs">
+                                <rect key="frame" x="218" y="393" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoP2:" destination="S5d-sb-qrw" eventType="touchUpInside" id="43w-X7-eRI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN6-Pt-xxC">
+                                <rect key="frame" x="62" y="393" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoP1:" destination="S5d-sb-qrw" eventType="touchUpInside" id="fSv-pq-bQk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gtn-F2-MIk">
+                                <rect key="frame" x="20" y="28" width="130" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhG-FX-gk8">
+                                <rect key="frame" x="20" y="28" width="130" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-Pm-cMf">
+                                <rect key="frame" x="133" y="344" width="180" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="botao" destination="o9N-ip-57j" id="s0l-Bp-xPR"/>
+                        <outlet property="botaoP1O" destination="vN6-Pt-xxC" id="u6I-4n-TTP"/>
+                        <outlet property="botaoP2O" destination="PNB-HM-xOs" id="RX1-n0-kUx"/>
+                        <outlet property="imagemBatalhaM" destination="yhT-Pm-cMf" id="HI4-Hk-2bD"/>
+                        <outlet property="imagemBatalhaP" destination="yhG-FX-gk8" id="5pi-dI-F6k"/>
                         <outlet property="imagemMonstro" destination="Sqi-sE-6sM" id="OyO-i2-qva"/>
                         <outlet property="imagemP1" destination="7hJ-wA-9I3" id="s5j-wc-rhZ"/>
                         <outlet property="imagemP2" destination="OSL-rK-Ges" id="Mzn-dM-wW9"/>

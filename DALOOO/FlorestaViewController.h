@@ -23,6 +23,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelP2;
 @property (weak, nonatomic) IBOutlet UIImageView *imagemMonstro;
 @property (weak, nonatomic) IBOutlet UILabel *labelMosntro;
+- (IBAction)botaoP1:(id)sender;
+- (IBAction)botaoP2:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *botaoP1O;
+@property (weak, nonatomic) IBOutlet UIButton *botaoP2O;
+@property (weak, nonatomic) IBOutlet UIImageView *imagemBatalhaP;
+@property (weak, nonatomic) IBOutlet UIImageView *imagemBatalhaM;
 
 
 
