@@ -67,7 +67,7 @@ imagemBatalhaM,imagemBatalhaP,textoInfoM,botaoAtacarO,botaoOkO;
     nomeJogador.text = jogo.jogador.nomeJogador;
     _texto.backgroundColor = nil;
     _texto.textColor = [UIColor whiteColor];
-    NSString *text1 = @"Bem vindo ";
+    NSString *text1 = [NSString stringWithFormat:@"Bem vindo %@.",jogo.jogador.nomeJogador];
     _texto.text = text1;
     _texto.editable = NO;
     textoInfoM.editable = NO;
@@ -147,7 +147,7 @@ imagemBatalhaM,imagemBatalhaP,textoInfoM,botaoAtacarO,botaoOkO;
     }
 }
 - (IBAction)botaoP1:(id)sender {
-    infoP = [NSString stringWithFormat:@"Informações: %@",dadosP1];
+    infoP = [NSString stringWithFormat:@"%@",dadosP1];
     escolha = 1;
     aux++;
     imagemP2.hidden = YES;
@@ -161,7 +161,7 @@ imagemBatalhaM,imagemBatalhaP,textoInfoM,botaoAtacarO,botaoOkO;
 }
 
 - (IBAction)botaoP2:(id)sender {
-    infoP = [NSString stringWithFormat:@"Informações: %@",dadosP2];
+    infoP = [NSString stringWithFormat:@"%@",dadosP2];
     escolha = 2;
     aux++;
     imagemP1.hidden = YES;
@@ -174,10 +174,53 @@ imagemBatalhaM,imagemBatalhaP,textoInfoM,botaoAtacarO,botaoOkO;
     else imgBP = [UIImage imageNamed:@"mago.png"];
 }
 - (IBAction)botaoOk:(id)sender {
+    if(escolha == 1){
+        [larva atacarOutroPersonagem:jogo.jogador.personagem1];
+        _texto.text = jogo.jogador.personagem1.toString;
+    }
+    else{
+        [larva atacarOutroPersonagem:jogo.jogador.personagem2];
+        _texto.text = jogo.jogador.personagem2.toString;
+    }
+    if(escolha == 1){
+        if(jogo.jogador.personagem1.vida <= 0){
+            botaoOkO.hidden = YES;
+            botaoAtacarO.hidden = YES;
+            imagemBatalhaP.hidden = YES;
+            _texto.text = @"Você perdeu.\nLarva ganhou.";
+        }
+    }
+    else{
+        if(jogo.jogador.personagem2.vida <= 0){
+            botaoOkO.hidden = YES;
+            botaoAtacarO.hidden = YES;
+            imagemBatalhaP.hidden = YES;
+            _texto.text = @"Você perdeu.\nLarva ganhou.";
+        }
+    }
+    if(jogo.jogador.personagem1.vida > 0 && jogo.jogador.personagem2.vida > 0){
+    botaoAtacarO.hidden = NO;
+    botaoOkO.hidden = YES;
+    }
 }
 
 - (IBAction)botaoAtacar:(id)sender {
-    [jogo.jogador.personagem1 atacarOutroPersonagem:larva];
-    textoInfoM.text = larva.toString;
+    if(escolha == 1){
+        [jogo.jogador.personagem1 atacarOutroPersonagem:larva];
+    }
+    else [jogo.jogador.personagem2 atacarOutroPersonagem:larva];
+    if(larva.vida <= 0){
+        botaoAtacarO.hidden = YES;
+        imagemBatalhaM.hidden = YES;
+        if(escolha == 1)
+        textoInfoM.text = [NSString stringWithFormat:@"O personagem\n%@ venceu.",jogo.jogador.personagem1.nome];
+        else
+        textoInfoM.text = [NSString stringWithFormat:@"O personagem\n%@ venceu.",jogo.jogador.personagem2.nome];
+    }
+    else{
+        textoInfoM.text = larva.toString;
+        botaoAtacarO.hidden = YES;
+        botaoOkO.hidden = NO;
+    }
 }
 @end
